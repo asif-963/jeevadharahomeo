@@ -1,0 +1,442 @@
+<!doctype html>
+{% load static %}
+
+<html class="no-js" lang="zxx">
+    <head>
+        <!-- Meta Tags -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="keywords" content="Site keywords here">
+		<meta name="description" content="">
+		<meta name='copyright' content=''>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		
+		<!-- Title -->
+        <title>Jeevadhara Homeo Medical Centre</title>
+		
+		<!-- Favicon -->
+        <link rel="icon" href="{% static 'img/favicon.png' %}">
+		
+		<!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+		<!-- Nice Select CSS -->
+		<link rel="stylesheet" href="{% static 'css/nice-select.css' %}">
+		<!-- Font Awesome CSS -->
+        <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+		<!-- icofont CSS -->
+        <link rel="stylesheet" href="{% static 'css/icofont.css' %}">
+		<!-- Slicknav -->
+		<link rel="stylesheet" href="{% static 'css/slicknav.min.css' %}">
+		<!-- Owl Carousel CSS -->
+        <link rel="stylesheet" href="{% static 'css/owl-carousel.css' %}">
+		<!-- Datepicker CSS -->
+		<link rel="stylesheet" href="{% static 'css/datepicker.css' %}">
+		<!-- Animate CSS -->
+        <link rel="stylesheet" href="{% static 'css/animate.min.css' %}">
+		<!-- Magnific Popup CSS -->
+        <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
+		
+		<!-- Medipro CSS -->
+        <link rel="stylesheet" href="{% static 'css/normalize.css' %}">
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+		
+    </head>
+    <body>
+	
+		<!-- Preloader -->
+        <div class="preloader">
+            <div class="loader">
+                <div class="loader-outter"></div>
+                <div class="loader-inner"></div>
+
+                <div class="indicator"> 
+                    <svg width="16px" height="12px">
+                        <polyline id="back" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+                        <polyline id="front" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <!-- End Preloader -->
+		
+		<!-- Get Pro Button -->
+		<!-- <ul class="pro-features">
+			<a class="get-pro" href="#">Get Pro</a>
+			<li class="big-title">Pro Version Available on Themeforest</li>
+			<li class="title">Pro Version Features</li>
+			<li>2+ premade home pages</li>
+			<li>20+ html pages</li>
+			<li>Color Plate With 12+ Colors</li>
+			<li>Sticky Header / Sticky Filters</li>
+			<li>Working Contact Form With Google Map</li>
+			<div class="button">
+				<a href="http://preview.themeforest.net/item/mediplus-medical-and-doctor-html-template/full_screen_preview/26665910?_ga=2.145092285.888558928.1591971968-344530658.1588061879" target="_blank" class="btn">Pro Version Demo</a>
+				<a href="https://themeforest.net/item/mediplus-medical-and-doctor-html-template/26665910" target="_blank" class="btn">Buy Pro Version</a>
+			</div>
+		</ul> -->
+	
+		<!-- Header Area -->
+		<header class="header" >
+			<!-- Topbar -->
+			<!-- <div class="topbar">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6 col-md-5 col-12"> -->
+							<!-- Contact -->
+							<!-- <ul class="top-link">
+								<li><a href="{% url 'index' %}#about-us">About</a></li>
+								<li><a href="#">Doctors</a></li>
+								<li><a href="#contact-us">Contact</a></li>
+								<li><a href="#">FAQ</a></li>
+							</ul> -->
+							<!-- End Contact -->
+						<!-- </div>
+						<div class="col-lg-6 col-md-7 col-12"> -->
+							<!-- Top Contact -->
+							<!-- <ul class="top-contact">
+								<li><i class="fa fa-phone"></i>+880 1234 56789</li>
+								<li><i class="fa fa-envelope"></i><a href="mailto:support@yourmail.com">support@yourmail.com</a></li>
+							</ul> -->
+							<!-- End Top Contact -->
+						<!-- </div>
+					</div>
+				</div>
+			</div> -->
+			<!-- End Topbar -->
+			<!-- Header Inner -->
+			<div class="header-inner">
+				<div class="container">
+					<div class="inner">
+						<div class="row">
+							<div class="col-lg-3 col-md-3 col-12">
+								<!-- Start Logo -->
+								<div class="logo">
+									<a href="{% url 'index' %}"><img src="{% static 'img/logo.png' %}" alt="#"></a>
+								</div>
+								<!-- End Logo -->
+								<!-- Mobile Nav -->
+								<div class="mobile-nav"></div>
+								<!-- End Mobile Nav -->
+							</div>
+							<div class="col-lg-10 col-md-9 col-12">
+								<!-- Main Menu -->
+								<div class="main-menu">
+									<nav class="navigation">
+										<ul class="nav menu">
+											<li class="active"><a href="{% url 'index' %}">Home </a>
+												<!-- <ul class="dropdown">
+													<li><a href="index.html">Home Page 1</a></li>
+												</ul> -->
+											</li>
+											<li><a href="{%url 'index' %}#about-us">About </a></li>
+											<li><a href="{%url 'index' %}#homeopathy">Homeopathy </a></li>
+											<li><a href="{%url 'index' %}#services">Services </a></li>
+											<li><a href="{%url 'doctor_profile'%}">Doctor</a></li>
+											<li><a href="#">Treatments <i class="icofont-rounded-down"></i></a>
+												<ul class="dropdown">
+													<li><a href="{% url 'disorders_of_women' %}">Disorders Of Women</a></li>
+													<li><a href="{% url 'skin_disorders' %}">Skin Disorders</a></li>
+													<li><a href="{% url 'cardiac_disorders' %}">Cardiac Disorders</a></li>
+												</ul>
+											</li>
+											<!-- <li><a href="#">Blogs <i class="icofont-rounded-down"></i></a>
+												<ul class="dropdown">
+													<li><a href="blog-single.html">Blog Details</a></li>
+												</ul>
+											</li> -->
+											<li><a href="{% url 'contact' %}">Contact Us</a></li>
+										</ul>
+									</nav>
+								</div>
+								<!--/ End Main Menu -->
+							</div>
+							<div class="col-lg-2 col-12">
+								<div class="get-quote">
+									<a href="{%url 'index' %}#appointment" class="btn">Book Appointment</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--/ End Header Inner -->
+		</header>
+		<!-- End Header Area -->
+	
+		<!-- Breadcrumbs -->
+		<div class="breadcrumbs overlay">
+			<div class="container">
+				<div class="bread-inner">
+					<div class="row">
+						<div class="col-12">
+							<h2>Cardiac Disorders </h2>
+							<ul class="bread-list">
+								<li><a href="{% url 'index' %}">Home</a></li>
+								<li><i class="icofont-simple-right"></i></li>
+								<li class="active">Cardiac Disorders</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End Breadcrumbs -->
+	
+		<!-- Start Portfolio Details Area -->
+		<section class="pf-details section">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="inner-content">
+							<div class="image-slider">
+								<div class="pf-details-slider">
+									<img src="{% static 'img/call-bg.jpg' %}" alt="#">
+									<img src="{% static 'img/call-bg.jpg' %}"  alt="#">
+									<img src="{% static 'img/call-bg.jpg' %}"  alt="#">
+								</div>
+							</div>
+							<!-- <div class="date">
+								<ul>
+									<li><span>Category :</span> Heart Surgery</li>
+									<li><span>Date :</span> April 20, 2019</li>
+									<li><span>Client :</span> Suke Agency</li>
+									<li><span>Ags :</span> Typo</li>
+								</ul>
+							</div> -->
+							<div class="body-text">
+								<h3>Cardiac Diseases</h3> 
+								<p>	The heart is a hollow, muscular organ in vertebrates, responsible for pumping blood through the blood vessels by repeated, rhythmic contractions, or a similar structure in annelids, mollusks, and arthropods. The term cardiac (as in cardiology) means "related to the heart" and comes from the Greek , kardia, for "heart". The heart is composed of cardiac muscle, an involuntary muscle tissue which is found only within this organ. <br>
+									CARDIAC DISEASES: We successfully treat the patients having different types of cardio vascular disease like chronic Myocardial Infarctions (coronary artery diseases / CAD), Valvular diseases, Rheumatic Heart Diseases (RHD), Septal Deffects and Aneurisms of large vessels,
+									<br>
+									<br><strong>▶️ 	Is it Possible to remove a Coronary Artery Disease (Heart Block) with HOMOEOPATHY?</strong><br>
+									YES, it is 100% possible because, homoeopathic medicines promote the health of the patient hasten the circulation in the coronary vessels. It removes the atheromas (clot) gradually from the vessels and also prevents it further. <br>
+									Normally when blood vessels occluded with a clot any where in the body automatically an Anastamotic circulation starts immediately through body mechanism and prevent more damage of concerned organ. This is called Angiogenesis, Natures way of bye pass. <br>
+									Here Homoeopathic medicines hasten this Angiogenesis mechanism and prevent more tear and wear to the heart muscles. This type newly generated vessels give more powerful circulations and durability than the artificial method (CABG).Irregular Heart Beats, Hypertensions, Cholesterol, chest pain, palpitation and other difficulties can easily rectifiable with Homoeopathic Medicines.
+									<h3>Cholesterol</h3>  <br>
+									Cholesterol is a waxy, fat-like substance that is found in all cells of the body. Your body needs some cholesterol to work the right way and makes all the cholesterol you need. Cholesterol is also found in some of the foods you eat. You use cholesterol to make hormones, Vitamin D, and substances that help you digest foods. Blood is watery and cholesterol is fatty. Just like oil and water, the two do not mix. So, in order to travel in the bloodstream, cholesterol is carried in small packages called lipoproteins (lip-o-PRO-teens). The small packages are made of fat (lipid) on the inside and proteins on the outside. Two kinds of lipoproteins carry cholesterol throughout your body. It is important to have healthy levels of both: LDL (low density lipoprotein) cholesterol is sometimes called "bad" cholesterol. High LDL cholesterol leads to a buildup of cholesterol in arteries. The higher the LDL level in your blood, the greater chance you have for getting heart disease. HDL (high density lipoprotein) cholesterol is sometimes called "good" cholesterol. HDL carries cholesterol from other parts of your body back to your liver. The liver removes the cholesterol from your body. The higher your HDL cholesterol level, the lower your chance of getting heart disease.
+									<br><br><strong>▶️ 	What Is High Blood Cholesterol?</strong><br>
+									Too much cholesterol in your blood can build up in the walls of your arteries (blood vessels that carry blood from the heart to other parts of the body). This buildup of cholesterol is called plaque (PLACK). Over time, plaque can cause narrowing of the arteries. This is called atherosclerosis (ath-er-o-skler-O-sis) or "hardening of the arteries." Special arteries, called coronary arteries, bring blood to the heart. Narrowing of your coronary arteries due to plaque can stop or slow down the flow of blood to your heart. When the arteries narrow, the amount of oxygen-carrying blood is decreased. This is called coronary artery d isease (CAD). Large plaque areas can lead to chest pain called angina. Angina happens when the heart does not receive enough blood and the oxy gen it carries. Angina is a common sign of CAD. Some plaques have a thin covering and burst (rupture), releasing fat and cholesterol into the bl oodstream. The release of fat and cholesterol may cause your blood to clot. A clot can block the flow of blood. This blockage can cause angina o r a heart attack.Lowering your cholesterol level decreases your chance for having a plaque burst and cause a heart attack. Lowering cholesterol m ay also slow down, reduce, or even stop plaque from building up.Plaque and resulting health problems can also occur in arteries elsewhere in the body.
+								
+									<p>	<strong> ▶️ 	What Makes Your Cholesterol High or Low?</strong> <br>
+										Your blood cholesterol level is affected not only by what you eat but also by how quickly your body makes LDL ("bad") cholesterol and disposes of it. In fact, your body makes all the cholesterol it needs, and it is not necessary to take in any additional cholesterol from the foods you eat. Many factors help determine whether your LDL-cholesterol level is high or low. The following factors are the most important: <br> <br> 
+										🖋️ Heredity <br>
+										🖋️ What you eat <br>
+										🖋️ Weight <br>
+										🖋️ Physical activity/exercise <br>
+										🖋️ Age and sex <br>
+										🖋️ Alcohol <br>
+										🖋️ Stress <br>
+										<br><strong>▶️ 	Heredity</strong><br>
+										Your genes influence how high your LDL ("bad") cholesterol is by affecting how fast LDL is made and removed from the blood. One specific form of inherited high cholesterol that affects 1 in 500 people is familial hypercholester olemia, which often leads to early heart disease. But even if you do not have a specific genetic form of high cholesterol, genes play a role in influencing your LDL-cholesterol level.
+										
+										<br><br><strong>▶️ What you eat</strong><br>
+										Two main nutrients in the foods you eat make your LDL ("bad") cholesterol level go up: saturated fat, a type of fat found mostly in foods that come from animals; and cholesterol, which comes only from animal products. Saturated fat raises your LDL-cholesterol level more than anything else in the diet. Eating too much saturated fat and cholesterol is the main reason for high levels of cholesterol and a high rate of heart attacks in the United States. Redu cing the amount of saturated fat and cholesterol you eat is a very important step in reducing your blood cholesterol levels.
+										
+										<br><br><strong>▶️ 	Weight</strong><br>
+										Excess weight tends to increase your LDL ("bad") cholesterol level. If you are overweight and have a high LDL-cholesterol level, losing weight may help you lower it. Weight loss also helps to lower triglycerides and raise HDL ("good") cholesterol levels.
+										<br>Physical activity/exercise Regular physical activity may lower LDL ("bad") cholesterol and raise HDL ("good") cholesterol levels.
+										
+
+										<br><br><strong>▶️ 	Age and sex</strong><br>
+										Before the age of menopause, women usually have total cholesterol levels that are lower than those of men the same age. As women and men get older, their blood cholesterol levels rise until about 60 to 65 years of age. After the age of about 50, women often have higher total cholesterol levels than men of the same age.
+
+										<br><br><strong>▶️ 	Alcohol</strong><br>
+										Alcohol intake increases HDL ("good") cholesterol but does not lower LDL ("bad") cholesterol . Doctors don't know for certain whether alcohol also reduces the risk of heart disease. Drinking too much alcohol can damage the liver and heart muscle, lead to high blood pressure, and raise triglycerides. Because of the risks, alcoholic beverages should not be used as a way to prevent he art disease.
+										
+										<br><br><strong>▶️ 	Stress</strong><br>
+										Stress over the long term has been shown in several studies to raise blood cholesterol levels. One way that stress may do this is by affecting your habits. For example, when some people are under stress, they console themselves by eating fatty foods. The saturated fat and cholesterol in these foods contribute to higher levels of blood cholesterol.
+										
+
+										<br> <h3>Infertility</h3> 
+									<p>	Infertility is a major social problem in the society. Children are the important factor in the family life. Normally the females are the victims of this complaint. The orthodox family blames females regarding this defect. Here both partners are equally responsible for this condition. So the couple equally should take the treatments according to the cause and complaints. What is infertility? It is the inability of lady to pregnant after one year of uninterrupted regular sex. It is divided in to two. Primary- Failure of pregnancy- and Secondary- Failure of pregnancy after a child or an abortion Seventy to eighty percent of ladies become pregnant within six months of their family life. This pe riod may vary according to persons. If a lady is failed to conceive properly within one year after ma rriage and family life should undergo some investigations and treatment. Both of the couple should take treatment. Common causes of infertility mainly divided in to Male and Female causes.<br>
+									<br><strong>▶️ 	Male causes:</strong><br>
+									Impotency- Inability to perform intercourse. It may due to defective erection or failure to do the act. This may be due to nervousness or hormonal imbalance. Some perversions and lack of sexual educations are other causes of this. Testicular Varicosity - Atherosclerosis of testicular vessels prevent normal blood flow in the testis. It increases the heat in testis and reduces the production of sperms. Mumps - Enlargement of parotid gland during childhood is one of the causes of infertility. Metastasis occurs to the testis and orchitis will be the result. This permanently damages the testis and thereby prevents spermatogenesis. X-Ray: Repeated exposure inhibits the potency. Alcoholism, heavy smoking and wearing of tight under garments also affects. Moreover congenital malformations of t esticles, venereal diseases, tuberculosis, trauma, malignancy and certain drugs also retard the spermatogenesis. Asoo spermia (semen without sperm), Oligospermia (semen having less amount of sperm), sperm without motility.
+
+									<br><br><strong>▶️ 	Female causes:</strong><br>
+									Irregularity in menstruation.Normally puberty occurs from the age of 12 years onwards. Regular menses in every 28 days without comp lication is needed for effective ovulation. Due to some hormonal imbalance, this inhibits regular menses and ovulations. Infection o f mumps causes metastasis to the ovary. T.B, chronic inflammations in the pelvic organs like fallopian tube (salpingitis), wall of ut erus (metritis), ovary (oophritis), Poly cystic ovarian disease(PCOD/PCOS), trauma to the lower abdominal organs and genitals, dysfunc tion of other endocrine glands like thyroid, pituitary, hypothalamus, adrenal gland, congenital mal formations of vagina, uterus, rigi d hymen, endometriosis and sexual frigiditiness are also responsible to the female infertility.
+
+									<br> <h3>Polycystic ovarian deseases ( PCODP / PCOS )</h3> 
+										<br><strong>▶️ 	What is a polycystic ovary syndrome ( PCOS ) ?</strong><br>
+										Polycystic ovary syndrome (PCOS) is a health problem that can affect a woman's hormone levels, periods, and ovulation. This can affect fertility and pregnancy. It can also cause male-type body changes. If you have PCOS, your hormone (endocrine) system is out of balance. This can lead to serious health problems, such as diabetes and heart disease. What are the symptoms?If you have PCOS, you may have problems with:
+										<br><br>
+										- Acne.
+										- Weight gain and have trouble losing weight. <br>
+										- Male pattern baldness or thinning hair on the scalp. <br>
+										- Hair growth on the face, back, or chest. <br>
+										- High blood sugar (hyperglycemia). <br><br>
+										PCOS also can cause menstrual and pregnancy problems, including: <br><br>
+										- No periods or irregular periods. <br>
+										- Trouble getting pregnant. <br>
+										- Repeat miscarriages. <br>
+										- Gestational diabetes during pregnancy. <br><br>
+										Living with PCOS symptoms can affect your emotional well-being, sexual satisfaction, and overall quality of life. This can lead to depression. 1 What causes PCOS The cause of PCOS is not known. PCOS problems are caused by hormone changes. One hormone change triggers another, which changes another. This makes a "vicious circle" of out-of-balance hormones in your endocrine system, including:
+										<br><br>
+										- Ovary hormones. When the hormones that trigger ovulation are not at the right levels, the ovary does not release an egg every month. In some women, cysts form on the ovaries. These cysts make androgen.
+										<br>
+										- High androgen levels. High androgen in a woman causes male-type hair and acne problems and can stop ovulation.
+										<br>
+										- High insulin and blood sugar levels. About half of women with PCOS have a problem with how the body uses insulin, called insulin resistance. When the body doesn't use insulin well, blood sugar builds to high levels. If not treated, this can lead to diabetes.
+										<br>
+										High cholesterol levels. This is common with PCOS.
+										<br><br>
+										Experts do not yet fully understand what triggers PCOS hormone changes. But they have found that lowering insulin levels seems to improve PCOS problems.2 You may have a high risk of PCOS if members of your family have had PCOS or type 2 diabetes problems.2 You may have a high risk of PCOS if members of your family have had PCOS or type 2 diabetes. Does PCOS increase your risk for other health problems? PCOS raises your risks of infertility, high cholesterol, high blood pressure, obstructive sleep apnea, heart disease, uterine (endometrial) cancer, and diabetes. (Of women who have PCOS, about 1 in 10 have type 2 diabetes by age 40. 2 ) If you do not have menstrual bleeding for a year or more, your risk of uterine cancer increases. Treating PCOS can lower these health risks.With PCOS, you also have higher risks of miscarriage and gestational diabetes. This may be linked to high insulin levels.
+
+										<!-- <div class="share">
+									<h4>Share Now -</h4>
+									<ul>
+										<li><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+									</ul>
+								</div> -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End Portfolio Details Area -->
+		
+		<!-- Footer Area -->
+		<footer id="footer" class="footer ">
+			<!-- Footer Top -->
+			<div class="footer-top">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-3 col-md-6 col-12">
+							<div class="single-footer">
+								<h2>About Us</h2>
+								<p>Jeevadhara Homeo Medical Center offers holistic care, personalized homeopathic treatment, preventive medicine, counseling, and compassionate support for patients' well-being.</p>
+								<!-- Social -->
+								<ul class="social">
+									<li><a href="#"><i class="icofont-facebook"></i></a></li>
+									<li><a href="#"><i class="icofont-google-plus"></i></a></li>
+									<li><a href="#"><i class="icofont-twitter"></i></a></li>
+									<li><a href="#"><i class="icofont-vimeo"></i></a></li>
+									<li><a href="#"><i class="icofont-pinterest"></i></a></li>
+								</ul>
+								<!-- End Social -->
+							</div>
+						</div>
+						&nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;&nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp;  
+						<div class="col-lg-3 col-md-6 col-12">
+							<div class="single-footer f-link">
+								<h2>Quick Links</h2>
+								<div class="row">
+									<div class="col-lg-6 col-md-6 col-12">
+										<ul>
+											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Home</a></li>
+											<li><a href="{% url 'index' %}#about-us"><i class="fa fa-caret-right" aria-hidden="true"></i>About Us</a></li>
+											<li><a href="{% url 'index' %}#services"><i class="fa fa-caret-right" aria-hidden="true"></i>Services</a></li>
+											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Our Cases</a></li>
+											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Other Links</a></li>	
+										</ul>
+									</div>
+									<div class="col-lg-6 col-md-6 col-12">
+										<ul>
+											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Consuling</a></li>
+											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Finance</a></li>
+											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Testimonials</a></li>
+											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>FAQ</a></li>
+											<li><a href="{% url 'contact' %}"><i class="fa fa-caret-right" aria-hidden="true"></i>Contact Us</a></li>	
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						&nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;&nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp;  &nbsp;
+						<div class="col-lg-3 col-md-6 col-12">
+							<div class="single-footer">
+								<h2>Open Hours</h2>
+								<!-- <p>Lorem ipsum dolor sit ame consectetur adipisicing elit do eiusmod tempor incididunt.</p> -->
+								<ul class="time-sidual">
+									<li class="day">Monday - Fridayp <span>8.00-20.00</span></li>
+									<li class="day">Saturday <span>9.00-18.30</span></li>
+									<li class="day">Monday - Thusday <span>9.00-15.00</span></li>
+								</ul>
+							</div>
+						</div>
+						<!-- <div class="col-lg-3 col-md-6 col-12">
+							<div class="single-footer">
+								<h2>Newsletter</h2>
+								<p>subscribe to our newsletter to get allour news in your inbox.. Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
+								<form action="mail/mail.php" method="get" target="_blank" class="newsletter-inner">
+									<input name="email" placeholder="Email Address" class="common-input" onfocus="this.placeholder = ''"
+										onblur="this.placeholder = 'Your email address'" required="" type="email">
+									<button class="button"><i class="icofont icofont-paper-plane"></i></button>
+								</form>
+							</div>
+						</div> -->
+					</div>
+				</div>
+			</div>
+			<!--/ End Footer Top -->
+			<!-- Copyright -->
+			<div class="copyright">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12 col-md-12 col-12">
+							<div class="copyright-content">
+								<p>© Copyright 2018  |  All Rights Reserved by <a href="https://www.wpthemesgrid.com" target="_blank">wpthemesgrid.com</a> </p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--/ End Copyright -->
+		</footer>
+		<!--/ End Footer Area -->
+		
+		<!-- jquery Min JS -->
+        <script src="{% static 'js/jquery.min.js' %}"></script>
+		<!-- jquery Migrate JS -->
+		<script src="{% static 'js/jquery-migrate-3.0.0.js' %}"></script>
+		<!-- jquery Ui JS -->
+		<script src="{% static 'js/jquery-ui.min.js' %}"></script>
+		<!-- Easing JS -->
+        <script src="{% static 'js/easing.js' %}"></script>
+		<!-- Color JS -->
+		<script src="{% static 'js/colors.js' %}"></script>
+		<!-- Popper JS -->
+		<script src="{% static 'js/popper.min.js' %}"></script>
+		<!-- Bootstrap Datepicker JS -->
+		<script src="{% static 'js/bootstrap-datepicker.js' %}"></script>
+		<!-- Jquery Nav JS -->
+        <script src="{% static 'js/jquery.nav.js' %}"></script>
+		<!-- Slicknav JS -->
+		<script src="{% static 'js/slicknav.min.js' %}"></script>
+		<!-- ScrollUp JS -->
+        <script src="{% static 'js/jquery.scrollUp.min.js' %}"></script>
+		<!-- Niceselect JS -->
+		<script src="{% static 'js/niceselect.js' %}"></script>
+		<!-- Tilt Jquery JS -->
+		<script src="{% static 'js/tilt.jquery.min.js' %}"></script>
+		<!-- Owl Carousel JS -->
+        <script src="{% static 'js/owl-carousel.js' %}"></script>
+		<!-- counterup JS -->
+		<script src="{% static 'js/jquery.counterup.min.js' %}"></script>
+		<!-- Steller JS -->
+		<script src="{% static 'js/steller.js' %}"></script>
+		<!-- Wow JS -->
+		<script src="{% static 'js/wow.min.js' %}"></script>
+		<!-- Magnific Popup JS -->
+		<script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+		<!-- Counter Up CDN JS -->
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+		<!-- Google Map API Key JS -->
+		<script src="https://maps.google.com/maps/api/js?key=AIzaSyDGqTyqoPIvYxhn_Sa7ZrK5bENUWhpCo0w"></script>
+		<!-- Gmaps JS -->
+		<script src="{% static 'js/gmaps.min.js' %}"></script>
+		<!-- Map Active JS -->
+		<script src="{% static 'js/map-active.js' %}"></script>
+		<!-- Bootstrap JS -->
+		<script src="{% static 'js/bootstrap.min.js' %}"></script>
+		<!-- Main JS -->
+		<script src="{% static 'js/main.js' %}"></script>
+    </body>
+</html>

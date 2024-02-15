@@ -1,0 +1,417 @@
+<!doctype html>
+{% load static %}
+
+<html class="no-js" lang="zxx">
+    <head>
+        <!-- Meta Tags -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="keywords" content="Site keywords here">
+		<meta name="description" content="">
+		<meta name='copyright' content=''>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		
+		<!-- Title -->
+        <title>Jeevadhara Homeo Medical Centre</title>
+		
+		<!-- Favicon -->
+        <link rel="icon" href="{% static 'img/favicon.png' %}">
+		
+		<!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+		<!-- Nice Select CSS -->
+		<link rel="stylesheet" href="{% static 'css/nice-select.css' %}">
+		<!-- Font Awesome CSS -->
+        <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+		<!-- icofont CSS -->
+        <link rel="stylesheet" href="{% static 'css/icofont.css' %}">
+		<!-- Slicknav -->
+		<link rel="stylesheet" href="{% static 'css/slicknav.min.css' %}">
+		<!-- Owl Carousel CSS -->
+        <link rel="stylesheet" href="{% static 'css/owl-carousel.css' %}">
+		<!-- Datepicker CSS -->
+		<link rel="stylesheet" href="{% static 'css/datepicker.css' %}">
+		<!-- Animate CSS -->
+        <link rel="stylesheet" href="{% static 'css/animate.min.css' %}">
+		<!-- Magnific Popup CSS -->
+        <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
+		
+		<!-- Medipro CSS -->
+        <link rel="stylesheet" href="{% static 'css/normalize.css' %}">
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+		
+    </head>
+<body>
+
+<div class="preloader">
+<div class="loader">
+<div class="loader-outter"></div>
+<div class="loader-inner"></div>
+<div class="indicator">
+<svg width="16px" height="12px">
+<polyline id="back" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+<polyline id="front" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+</svg>
+</div>
+</div>
+</div>
+
+
+<!-- <div class="color-plate">
+<a class="color-plate-icon"><i class="fa fa-cog fa-spin"></i></a>
+<h4>Medikit</h4>
+<p>Here is some awesome color's available on Medikit Template.</p>
+<span class="color1"></span>
+<span class="color2"></span>
+<span class="color3"></span>
+<span class="color4"></span>
+<span class="color5"></span>
+<span class="color6"></span>
+<span class="color7"></span>
+<span class="color8"></span>
+<span class="color9"></span>
+<span class="color10"></span>
+<span class="color11"></span>
+<span class="color12"></span>
+</div> -->
+
+
+<header class="header">
+
+<!-- <div class="topbar">
+<div class="container">
+<div class="row">
+<div class="col-lg-6 col-md-5 col-12">
+
+<ul class="top-link">
+<li><a href="#">About</a></li>
+<li><a href="#">Doctors</a></li>
+<li><a href="#">Contact</a></li>
+<li><a href="#">FAQ</a></li>
+</ul>
+
+</div>
+<div class="col-lg-6 col-md-7 col-12">
+
+<ul class="top-contact">
+<li><i class="fa fa-phone"></i>+880 1234 56789</li>
+<li><i class="fa fa-envelope"></i><a href="/cdn-cgi/l/email-protection#90e3e5e0e0ffe2e4d0e9ffe5e2fdf1f9fcbef3fffd"><span class="__cf_email__" data-cfemail="0e7d7b7e7e617c7a4e77617b7c636f6762206d6163">[email&#160;protected]</span></a></li>
+</ul>
+
+</div>
+</div>
+</div>
+</div> -->
+
+
+<div class="header-inner">
+	<div class="container">
+		<div class="inner">
+			<div class="row">
+				<div class="col-lg-3 col-md-3 col-12">
+					<!-- Start Logo -->
+					<div class="logo">
+						<a href="{% url 'index' %}"><img src="{% static 'img/logo.png' %}" alt="#"></a>
+					</div>
+					<!-- End Logo -->
+					<!-- Mobile Nav -->
+					<div class="mobile-nav"></div>
+					<!-- End Mobile Nav -->
+				</div>
+				<div class="col-lg-10 col-md-9 col-12">
+					<!-- Main Menu -->
+					<div class="main-menu">
+						<nav class="navigation">
+							<ul class="nav menu">
+								<li class="active"><a href="{% url 'index' %}">Home </a>
+									<!-- <ul class="dropdown">
+										<li><a href="index.html">Home Page 1</a></li>
+									</ul> -->
+								</li>
+								<li><a href="{%url 'index' %}#about-us">About </a></li>
+								<li><a href="{%url 'index' %}#homeopathy">Homeopathy </a></li>
+								<li><a href="{%url 'index' %}#services">Services </a></li>
+								<li><a href="{%url 'doctor_profile'%}">Doctor</a></li>
+								<li><a href="#">Treatments <i class="icofont-rounded-down"></i></a>
+									<ul class="dropdown">
+										<li><a href="{% url 'disorders_of_women' %}">Disorders Of Women</a></li>
+										<li><a href="{% url 'skin_disorders' %}">Skin Disorders</a></li>
+										<li><a href="{% url 'cardiac_disorders' %}">Cardiac Disorders</a></li>
+									</ul>
+								</li>
+								<!-- <li><a href="#">Blogs <i class="icofont-rounded-down"></i></a>
+									<ul class="dropdown">
+										<li><a href="blog-single.html">Blog Details</a></li>
+									</ul>
+								</li> -->
+								<li><a href="{% url 'contact' %}">Contact Us</a></li>
+							</ul>
+						</nav>
+					</div>
+					<!--/ End Main Menu -->
+				</div>
+				<div class="col-lg-2 col-12">
+					<div class="get-quote">
+						<a href="{%url 'index' %}#appointment" class="btn">Book Appointment</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--/ End Header Inner -->
+</header>
+
+
+<div class="breadcrumbs overlay">
+<div class="container">
+<div class="bread-inner">
+<div class="row">
+<div class="col-12">
+<h2>Doctor Details</h2>
+<ul class="bread-list">
+<li><a href="{% url 'index' %}">Home</a></li>
+<li><i class="icofont-simple-right"></i></li>
+<li class="active">Doctor Details</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="doctor-details-area section">
+<div class="container">
+<div class="row">
+<div class="col-lg-5">
+<div class="doctor-details-item doctor-details-left">
+<img src="{% static 'img/doctor.png' %}" alt="#">
+<div class="doctor-details-contact">
+<h3>Contact info</h3>
+<ul class="basic-info">
+<li>
+<i class="icofont-ui-call"></i>
+Call : +91 9447307947
+</li>
+<li>
+<i class="icofont-ui-message"></i>
+<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="640c0108080b240901001701124a070b09">jeevadhara09@gmail.com</a>
+</li>
+<li>
+<i class="icofont-location-pin"></i>
+Jeevadhara Homoeo Medical Centre
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Okkal. P.O.,
+Ernakulam Dt.,
+Kerala., <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PIN:683 550.,
+India.
+</li>
+</ul>
+
+<ul class="social">
+<li><a href="#"><i class="icofont-facebook"></i></a></li>
+<li><a href="#"><i class="icofont-google-plus"></i></a></li>
+<li><a href="#"><i class="icofont-twitter"></i></a></li>
+<li><a href="#"><i class="icofont-vimeo"></i></a></li>
+<li><a href="#"><i class="icofont-pinterest"></i></a></li>
+</ul>
+
+<div class="doctor-details-work">
+<h3>Working hours</h3>
+<ul class="time-sidual">
+<li class="day">Monday - Friday <span>8.00-20.00</span></li>
+<li class="day">Saturday <span>9.00-18.30</span></li>
+<li class="day">Monday - Thusday <span>9.00-15.00</span></li>
+<!-- <li class="day">Monday - Friday <span>8.00-20.00</span></li> -->
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-7">
+<div class="doctor-details-item">
+<div class="doctor-details-right">
+<div class="doctor-name">
+<h3 class="name">Dr. Sherly Joseph</h3>
+<p class="deg">Chief Physician</p>
+<p class="degree">BHMS,MD is graduated in Homeopathy</p>
+</div>
+<div class="doctor-details-biography">
+<h3>Biography</h3>
+<p>Chief Physician -Dr. Sherly Joseph BHMS,MD is graduated in Homoeopathy from Mangalore University-in 1998. She has obtained post graduation from Rajiv Gandhi University of Health Sciences Bangalore, Karnataka in Malirea Matiria Medica in the year 2003.She has secured First Rank in the University for MD Studies.
+<br>
+	Dr.Sherly Joseph belongs to the congregation of the Medical Sisters of St. Joseph ( MSJ ). Inspired by the Divine healer Jesus Christ, she joined the congregation in the year 1989. She has the religious name Sr.Sherin MSJ. The Congregation uphold the motto of Love, Service, and has the Vision. To touch the humanity with compassionate Heart to bring about wholeness.
+	<br>
+	MSJ mission is to contribute the best with generosity and joy as Angels of consolation, Mystic Activists change agents to facilitate healing and wholeness to humanity especially the poor and marginalized.
+	<br>
+	Following the example of Jesus and inbiding the spirit of the Congregation, Sr. Sherly Joseph ( Sr.Sherin MSJ ) renders her service in the field of homoeopathy in Jeevadhara Homoeo Medical Centre. Homoeopathy is a safe and effective treatment given to all diseases. Sr.Sherin has good experience to handle all the chronic diseases. This Centre promotes positive health through preventive medicine and Counseling.</p><br>
+
+</div>
+<div class="doctor-details-biography">
+<h3>Education</h3>
+<ul>
+<li>Bachelor of Homoeopathic Medicine and Surgery (BHMS) from Mangalore University - 1998.</li>
+<li>Post Graduation in Materia Medica from Rajiv Gandhi University of Health Sciences, Bangalore, Karnataka - 2003.</li>
+<!-- <li>MBBS degree in Neurosciences at University of Mediserv (2002)</li>
+<li>Higher Secondary Certificate at Mediserv collage (1991)</li> -->
+</ul>
+</div>
+<div class="doctor-details-biography">
+<!-- <h3>Biography</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra</p> -->
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+		<!-- Footer Area -->
+		<footer id="footer" class="footer ">
+			<!-- Footer Top -->
+			<div class="footer-top">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-3 col-md-6 col-12">
+							<div class="single-footer">
+								<h2>About Us</h2>
+								<p>Jeevadhara Homeo Medical Center offers holistic care, personalized homeopathic treatment, preventive medicine, counseling, and compassionate support for patients' well-being.</p>
+								<!-- Social -->
+								<ul class="social">
+									<li><a href="#"><i class="icofont-facebook"></i></a></li>
+									<li><a href="#"><i class="icofont-google-plus"></i></a></li>
+									<li><a href="#"><i class="icofont-twitter"></i></a></li>
+									<li><a href="#"><i class="icofont-vimeo"></i></a></li>
+									<li><a href="#"><i class="icofont-pinterest"></i></a></li>
+								</ul>
+								<!-- End Social -->
+							</div>
+						</div>
+						&nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;&nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp;  
+						<div class="col-lg-3 col-md-6 col-12">
+							<div class="single-footer f-link">
+								<h2>Quick Links</h2>
+								<div class="row">
+									<div class="col-lg-6 col-md-6 col-12">
+										<ul>
+											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Home</a></li>
+											<li><a href="{% url 'index' %}#about-us"><i class="fa fa-caret-right" aria-hidden="true"></i>About Us</a></li>
+											<li><a href="{% url 'index' %}#services"><i class="fa fa-caret-right" aria-hidden="true"></i>Services</a></li>
+											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Our Cases</a></li>
+											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Other Links</a></li>	
+										</ul>
+									</div>
+									<div class="col-lg-6 col-md-6 col-12">
+										<ul>
+											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Consuling</a></li>
+											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Finance</a></li>
+											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Testimonials</a></li>
+											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>FAQ</a></li>
+											<li><a href="{% url 'contact' %}"><i class="fa fa-caret-right" aria-hidden="true"></i>Contact Us</a></li>	
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						&nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;&nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp;  &nbsp;
+						<div class="col-lg-3 col-md-6 col-12">
+							<div class="single-footer">
+								<h2>Open Hours</h2>
+								<!-- <p>Lorem ipsum dolor sit ame consectetur adipisicing elit do eiusmod tempor incididunt.</p> -->
+								<ul class="time-sidual">
+									<li class="day">Monday - Fridayp <span>8.00-20.00</span></li>
+									<li class="day">Saturday <span>9.00-18.30</span></li>
+									<li class="day">Monday - Thusday <span>9.00-15.00</span></li>
+								</ul>
+							</div>
+						</div>
+						<!-- <div class="col-lg-3 col-md-6 col-12">
+							<div class="single-footer">
+								<h2>Newsletter</h2>
+								<p>subscribe to our newsletter to get allour news in your inbox.. Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
+								<form action="mail/mail.php" method="get" target="_blank" class="newsletter-inner">
+									<input name="email" placeholder="Email Address" class="common-input" onfocus="this.placeholder = ''"
+										onblur="this.placeholder = 'Your email address'" required="" type="email">
+									<button class="button"><i class="icofont icofont-paper-plane"></i></button>
+								</form>
+							</div>
+						</div> -->
+					</div>
+				</div>
+			</div>
+			<!--/ End Footer Top -->
+			<!-- Copyright -->
+			<div class="copyright">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12 col-md-12 col-12">
+							<div class="copyright-content">
+								<p>© Copyright 2018  |  All Rights Reserved by <a href="https://www.wpthemesgrid.com" target="_blank">wpthemesgrid.com</a> </p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--/ End Copyright -->
+		</footer>
+
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/jquery.min.js"></script>
+
+		<!-- jquery Min JS -->
+        <script src="{% static 'js/jquery.min.js' %}"></script>
+		<!-- jquery Migrate JS -->
+		<script src="{% static 'js/jquery-migrate-3.0.0.js' %}"></script>
+		<!-- jquery Ui JS -->
+		<script src="{% static 'js/jquery-ui.min.js' %}"></script>
+		<!-- Easing JS -->
+        <script src="{% static 'js/easing.js' %}"></script>
+		<!-- Color JS -->
+		<script src="{% static 'js/colors.js' %}"></script>
+		<!-- Popper JS -->
+		<script src="{% static 'js/popper.min.js' %}"></script>
+		<!-- Bootstrap Datepicker JS -->
+		<script src="{% static 'js/bootstrap-datepicker.js' %}"></script>
+		<!-- Jquery Nav JS -->
+        <script src="{% static 'js/jquery.nav.js' %}"></script>
+		<!-- Slicknav JS -->
+		<script src="{% static 'js/slicknav.min.js' %}"></script>
+		<!-- ScrollUp JS -->
+        <script src="{% static 'js/jquery.scrollUp.min.js' %}"></script>
+		<!-- Niceselect JS -->
+		<script src="{% static 'js/niceselect.js' %}"></script>
+		<!-- Tilt Jquery JS -->
+		<script src="{% static 'js/tilt.jquery.min.js' %}"></script>
+		<!-- Owl Carousel JS -->
+        <script src="{% static 'js/owl-carousel.js' %}"></script>
+		<!-- counterup JS -->
+		<script src="{% static 'js/jquery.counterup.min.js' %}"></script>
+		<!-- Steller JS -->
+		<script src="{% static 'js/steller.js' %}"></script>
+		<!-- Wow JS -->
+		<script src="{% static 'js/wow.min.js' %}"></script>
+		<!-- Magnific Popup JS -->
+		<script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+		<!-- Counter Up CDN JS -->
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+		<!-- Google Map API Key JS -->
+		<script src="https://maps.google.com/maps/api/js?key=AIzaSyDGqTyqoPIvYxhn_Sa7ZrK5bENUWhpCo0w"></script>
+		<!-- Gmaps JS -->
+		<script src="{% static 'js/gmaps.min.js' %}"></script>
+		<!-- Map Active JS -->
+		<script src="{% static 'js/map-active.js' %}"></script>
+		<!-- Bootstrap JS -->
+		<script src="{% static 'js/bootstrap.min.js' %}"></script>
+		<!-- Main JS -->
+		<script src="{% static 'js/main.js' %}"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317" integrity="sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA==" data-cf-beacon='{"rayId":"854cd40befb581d4","r":1,"version":"2024.2.0","token":"3248e93e0d6447329c4d6bcc351d5700"}' crossorigin="anonymous"></script>
+</body>
+</html>
